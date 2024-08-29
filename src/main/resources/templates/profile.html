@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            background: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .profile-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .profile-section h1 {
+            font-size: 2.5rem;
+        }
+        .profile-section h5 {
+            font-size: 1.2rem;
+        }
+        .profile-section a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="profile-section">
+        <h1>Profile Page</h1>
+        <h5 th:text="'Name: ' + ${user.name}"></h5>
+        <h5 th:text="'Email: ' + ${user.email}"></h5>
+        <h5 th:text="'Mobile No: ' + ${user.mobileNo}"></h5>
+        <h5 th:text="'Role: ' + ${user.role}"></h5>
+        <a th:href="@{/logout}">Logout</a>
+    </section>
+
+</body>
+</html>
