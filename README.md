@@ -8,6 +8,6 @@ Role-Based Access Control: Provides different access levels based on user roles.
 ### Technologies Used
 Spring Boot: Framework for creating stand-alone, production-grade Spring-based applications.
 Spring Security: Provides security features for authentication and authorization.
-SQL Database (e.g., MySQL, PostgreSQL): Used to store user information securely.
+SQL Database (e.g., MySQL): Used to store user information securely.
 Thymeleaf (or any other templating engine): For server-side rendering of login and registration pages.
 JPA/Hibernate: For database interaction.
